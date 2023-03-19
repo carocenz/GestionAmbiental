@@ -17,10 +17,19 @@ h2 {
     text-align: center;
 }
 
-#header{
+header{
     width: 100%;
     background-color: #000005;
     padding: 0%;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    justify-self: center;
+    text-align: center;
+}
+
+.nav-padre {
+    justify-self: center;
+    align-self: center;
 }
 
 /*para las listas - el estilo que le sacamos con el 'none' son los marcadores (puntitos) de cada palabra*/
@@ -96,16 +105,21 @@ ul, ol{
 .login {
     width: 100%;
     text-align: right;
+    display: grid;
 }
 
 .buscar {
-    width: 100%;
-    text-align: right;
+    width: 100%;   
 }
 
 .container {
     width: 100%;
-    text-align: center;
+    justify-self: end;
+}
+
+.buscador {
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 #form {
